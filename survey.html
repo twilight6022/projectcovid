@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>survey</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="form-group">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Covid-19</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="country-select.html">country <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="map.html">map <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="survey.html">survey <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">about</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+  <div id="wrapper">
+
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+
+        <div class="container-fluid">
+
+              <div class="col">
+                <form action="#" id="mainform" novalidate> 
+                    <h1 class="display-4">Screening Questionnaire COVID-19</h1>
+                    <h5 class="display-5">We need your help in providing the most accurate and truthful medical statement in order for us to treat and prevent spreading of the disease effectively</h5>
+                    <h6 class="display-5">Personal Info</h6>
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" required name="fname" id="fname" class="form-control" placeholder="First name">
+                          <div class="valid-feedback">
+                            Looks Good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please fill in your name
+                          </div>
+                        </div>
+                        <div class="col">
+                          <input type="text" required name="lname" id="lname" class="form-control" placeholder="Last name">
+                          <div class="valid-feedback">
+                            Looks Good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please fill in your lastname
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col">
+                          <input type="text" required name="id" id="email" class="form-control" placeholder="National ID">
+                          <div class="valid-feedback">
+                            Looks Good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please fill in your National ID
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col">
+                          <input type="text" required name="address" id="address" class="form-control" placeholder="Address">
+                          <div class="valid-feedback">
+                            Looks Good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please fill in your Address
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col">
+                          <input type="text" pattern="[0-9]{3}[0-9]{7}" required name="tel" id="tel" class="form-control" placeholder="Mobile Number">
+                          <div class="valid-feedback">
+                            Looks Good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please fill in your Mobile number
+                          </div>
+                        </div>
+                      </div>
+                    <br>
+                    <h6 class="display-5">Gender</h6>
+                    <div class="row mt-3">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                              <label class="form-check-label">
+                                  <input class="form-check-input" type="radio" name="gender" id="female" value="Female"> Female
+                                  <input class="form-check-input" type="radio" name="gender" id="male" value="Male"> Male
+                                  <input class="form-check-input" type="radio" name="gender" id="other" value="Other"> Other
+                              </label>
+                          </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+
+                      <label for="" class="mt-3">
+                        <h6>1. Your work was closely contacting with the traveler</h6>
+                      </label>
+        
+                      <div class="row mt-1">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="checkno1" id="yes" value="Yes"> Yes
+                                <input class="form-check-input" type="radio" name="checkno1" id="no"  value="No"> No
+                            </label>
+                        </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <label for="" class="mt-3">
+        
+                        <h6>2. Do you currently have any of the following symptoms?</h6>
+        
+                      </label>
+        
+                      <div class="row mt-3">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                              <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="checkno2" id="Fever" value="Fever"> Fever
+                             <br> <input class="form-check-input" type="checkbox" name="checkno2" id="Cough" value="Cough"> Cough/Sore Throat
+                             <br> <input class="form-check-input" type="checkbox" name="checkno2" id="Running" value="Running"> Running Nose
+                             <br> <input class="form-check-input" type="checkbox" name="checkno2" id="Phlegm" value="Phlegm"> Phlegm
+                             <br> <input class="form-check-input" type="checkbox" name="checkno2" id="Breathing" value="Breathing"> Difficulty Breathing
+                             <br> <input class="form-check-input" type="checkbox" name="checkno2" id="No abnormal symptoms" value="No abnormal symptoms"> No abnormal symptoms
+                              </label>
+                          </div>
+                        </div>
+                    </div>
+        
+        
+        
+                      <label for="" class="mt-3">
+        
+                        <h6>3. During last 14 day, have you travelled from or transited in any country*below? Please specify</h6>
+        
+                      </label>
+        
+                      <div class="row mt-3">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                              <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="checkno3" id="China" value="China"> China
+                             <br> <input class="form-check-input" type="checkbox" name="checkno3" id="Macao" value="Macao"> Macao
+                             <br> <input class="form-check-input" type="checkbox" name="checkno3" id="Hong Kong" value="Hong Kong"> Hong Kong
+                             <br> <input class="form-check-input" type="checkbox" name="checkno3" id="South Korea" value="South Korea"> South Korea
+                             <br> <input class="form-check-input" type="checkbox" name="checkno3" id="Italy" value="Italy"> Italy
+                             <br> <input class="form-check-input" type="checkbox" name="checkno3" id="Other" value="Other"> Other
+                              </label>
+                          </div>
+                        </div>
+                    </div>
+        
+                      <label for="" class="mt-3">
+        
+                        <h6>4. You have closely exposed to patient who confirmly infected by Corona virus 2019 or under investigation for COVID-19</h6>
+        
+                      </label>
+        
+                      <div class="row mt-1">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="checkno4" id="yes" value="Yes"> Yes
+                                <input class="form-check-input" type="radio" name="checkno4" id="no"  value="No"> No
+                            </label>
+                        </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <label for="" class="mt-3">
+        
+                        <h6>5. You are healthcare personal who cantact with the patient under invatigation fot COVID-19</h6>
+        
+                      </label>
+        
+                      <div class="row mt-1">
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="checkno5" id="yes" value="Yes"> Yes
+                                <input class="form-check-input" type="radio" name="checkno5" id="no"  value="No"> No
+                            </label>
+                        </div>
+                        </div>
+                      </div>
+
+                      <label for="" class="mt-3">
+        
+                        <h6>(Note: :ist of the afffected countries is subject to change following the updated notification and/or guidelines issued by the Ministry of Public Health and/or other govemment agencies.)</h6>
+        
+                      </label>
+
+                      <div class="row mt-5">
+                          <div class="col">
+                              <button class="btn btn-info" type="submit">Submit</button>
+                              <button class="btn btn-info" type="reset">Reset</button>
+                          </div>
+                      </div>
+                    </form>
+                </form>
+            </div>
+
+            
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin-2.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+  <script>
+    $(function(){
+        $("#mainform").submit(function(event){
+            console.log("submitted");
+            if($("#mainform")[0].checkValidity()==false){
+                event.preventDefault();
+            }
+            $("#mainform").addClass("was-validated");
+        })
+
+
+    })
+</script>
+
+</body>
+
+</html>
